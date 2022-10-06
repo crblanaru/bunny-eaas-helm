@@ -63,7 +63,7 @@ metadata:
     nginx.ingress.kubernetes.io/use-regex: "true"
   labels:
     app.kubernetes.io/managed-by: Bunnyshell
-  name: {{ .Values.unique }}-ingress
+  name: custom-{{ .Values.unique }}-ingress
 spec:
   ingressClassName: bns-nginx
   rules:
