@@ -67,7 +67,7 @@ metadata:
 spec:
   ingressClassName: bns-nginx
   rules:
-  - host: api-{{ .Values.unique }}.bunnyenv.com
+  - host: {{ .Values.ingressurl }}
     http:
       paths:
       - backend:
